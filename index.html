@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var num = 20;
+        var num = 40;
+        console.log(num);
+
+        let num1 = 20;
+        let num2 = 40;
+        console.log(num);
+
+        let num3 = 20;
+        {
+            let num4 = 60;
+            console.log(num4);
+        }
+        console.log(num3);
+
+        var num5 = 20;
+        {
+            var num6 = 60;
+            console.log(num6);
+        }
+        console.log(num5);
+
+        var x = 1;
+        let y = 2;
+        const z = 3;
+        x = 10;
+        y = 20;
+        z = 30;
+        console.log(x, y, z);
+
+    </script>
+
+    <script>
+        console.log("ABC" + 11);
+        console.log("12" - 11);
+
+        console.log(0 & 1);
+        console.log(0 & 20);
+        console.log(0 && 20);
+        console.log(null & undefined);
+        console.log(1 || (null && undefined));
+
+        let a = true;
+        let b = false;
+        let result = a || (b && console.log("Hello"));
+        console.log(result);
+    </script>
+
+    <script>
+        let age = prompt("Tell me your age");
+        let newage = Number(age);
+        if (newage >= 18) {
+            console.log("You are eligible to vote");
+        }
+        if (newage == 18) {
+            console.log("You are new to voting");
+        }
+
+        else {
+            console.log("You are not eligible to vote");
+        }
+
+    </script>
+    <script>
+        let num_a = 10;
+        let num_b = 20
+        x > y ? console.log("x is greater than y") : console.log("y is greater than x");
+    </script>
+</body>
+
+</html>

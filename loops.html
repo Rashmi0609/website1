@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        for (let i = 2; i < 10; i += 3) {
+            console.log(i);
+        }
+
+        let i = 0;
+        while (i < 5) {
+            console.log(i);
+            i += 2;
+        }
+    </script>
+
+    <script>
+        let a = 5;
+        while (a--) {
+            console.log(a);
+        }
+
+        for (i = 1; i <= 5; i++) {
+            if (i % 2 === 0) {
+                console.log(i);
+            }
+        }
+    </script>
+<!-- FACTORIAL  -->
+    <script>
+        let b=5
+        let factorial = 1;
+        for(i = 1; i <= 5; i++) {
+            factorial *= i;
+        }
+        console.log(`Factorial of ${b} is ${factorial}`);
+    </script>
+
+    <script>
+        let arr=[1, 2, 3, 4, 5, "hii", [6, 7, 8]];
+        console.log(Array.isArray(arr));
+        console.log(arr.length);
+        console.log(arr[0]); /*indexing*/
+        console.log(arr[arr.length - 1]); /*last element*/
+        console.log(arr[6][1]); /*nested array*/
+        console.log(arr.push(6)); /*adds element at the end*/
+        console.log(arr.pop()); /*removes last element*/
+        console.log(arr.indexOf(3)); /*returns index of element*/
+        console.log(arr.includes(6)); 
+        console.log(arr.join(', ')); /*joins elements with a separator*/
+        console.log(arr.shift()); /*removes first element*/
+        console.log(arr.unshift(0)); /*adds element at the beginning*/
+        console.log(arr.slice(1, 4)); /*returns a shallow copy of a portion of an array*/
+    </script>
+
+    <script>
+        let times=3;
+        for(i=0; i < times; i++) {
+            arr.push(arr.shift)
+        }
+        console.log(arr);
+
+        let x=20;
+        let y=x;
+        y=45;
+        console.log(x); // 20
+
+        let arr1 =[1,2,3,4,5];
+        let arr2 = arr1;
+        arr2.push(6);
+        console.log(arr1); // [1, 2, 3, 4, 5, 6]
+        let arr3=[7 , 8,6,1,2,3,4  ];
+        console.log(arr1.indexOf(11)); // -1 (not found)
+
+        let arr4 = [1, 2, 3, 4, 5];
+        let arr5 = [8, 9, 10];
+        console.log(arr5.push(arr4)) // [1, 2, 3, 4, 5, 8, 9, 10]
+    </script>
+</body>
+
+</html>
