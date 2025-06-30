@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let obj = {
+            a: 1,
+            b: 2
+        };
+        let newObj = {
+            c: 3,
+            d: 4,
+        };
+        // let combinedObj=Object.assign({}, obj, newObj); // Using Object.assign to combine objects
+        // console.log(combinedObj); // { a: 1, b: 2, c: 3, d: 4 }
+
+        let combinedObj = { ...obj, ...newObj }; // Spread operator to combine objects
+        console.log(obj, combinedObj); // { a: 1, b: 2 } { a: 1, b: 2, c: 3, d: 4 }
+        let arr = [1, 2, 3, 4, 5];
+        let newArr = [6, 7, 8];
+        let combinedArr = [...arr, ...newArr]; // Spread operator to combine arrays
+        console.log(arr, newArr, combinedArr); // [1, 2, 3, 4, 5] [6, 7, 8] [1, 2, 3, 4, 5, 6, 7, 8]
+        
+
+        // SPLIT
+        let array = prompt("Give me an Array: ");
+        console.log(array); // Displaying the input string
+        console.log(array.split(',')); // Splitting a string into an array
+        let splitArray = array.split(',').map(Number); // Converting string elements to numbers
+        console.log(splitArray); // Displaying the converted array
+        
+    </script>
+</body>
+
+</html>

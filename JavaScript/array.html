@@ -47,6 +47,41 @@
         let arr4 = [1, 2, 3, 4, 5];
         let arr5 = [8, 9, 10];
         console.log(arr5.push(arr4)) // [1, 2, 3, 4, 5, 8, 9, 10]
+        console.log(arr.flat()); /*flattens nested arrays*/;
+
+
+        // OBJECTS
+        // Objects are key-value pairs
+        // They are mutable and can contain various data types
+        // They can also contain functions (methods)
+        // They are not ordered like arrays, but you can access values using keys
+        // Creating an object
+
+        let obj = {};
+        let symb = Symbol("secret");
+        let newObj = {
+            name: "Rashmi",
+            "full name": "Rashmi Rajput",
+            age: 20,
+            logged: true,
+            workingDays: ["Monday", "Friday"],
+            [symb]: "password",
+        };
+        newObj.facebook = "Facebook";
+        // newObj["logged"] = "Instagram";
+        console.log(newObj["full name"]); // Rashmi Rajput        
+        console.log(newObj);
+
+        console.log(newObj[symb]);
+        console.log(typeof newObj); // object
+        console.log(newObj.name); // Rashmi
+        console.log(newObj["age"]); // 20
+        console.log(Object.keys(newObj)); // ["name", "full name", "age", "logged", "workingDays", Symbol(secret), "facebook"]
+        console.log(Object.keys(newObj).length); // 7
+        console.log(Object.values(newObj)); // ["Rashmi", "Rashmi Rajput", 20, true, ["Monday", "Friday"], "password", "Facebook"]
+        console.log(Object.entries(newObj)); // [["name", "Rashmi"], ["full name", "Rashmi Rajput"], ["age", 20], ["logged", true], ["workingDays", ["Monday", "Friday"]], [Symbol(secret), "password"], ["facebook", "Facebook"]]
+        
+
     </script>
 </body>
 
