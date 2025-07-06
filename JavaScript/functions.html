@@ -35,6 +35,71 @@
         let splitArray = array.split(',').map(Number); // Converting string elements to numbers
         console.log(splitArray); // Displaying the converted array
         
+
+        // FUNCTIONS
+        function saymyName(name) {
+            console.log("r");
+            console.log("a");
+            console.log("s");
+            console.log("h");
+            console.log("m");
+            console.log("i");     
+        }
+        saymyName();
+        console.log("hello"); 
+        saymyName();
+
+
+        function add(a, b) {
+            if (typeof a !== 'number' || typeof b !== 'number') {
+                console.log("please provide valid numbers");   
+                return;
+            }
+            console.log(a + b);
+            
+        }
+        add(1, 2); // Outputs: 3
+        // add("1", "2"); // Outputs: 12
+
+
+        function paymentRecord(...prices){
+            console.log(prices); // Outputs: Array of prices    
+        }
+        paymentRecord(100, 200, 300); // Outputs: [100, 200, 300]
+        paymentRecord(100, 200, 300, 400, 500); // Outputs: [100, 200, 300, 400, 500]
+
+
+        // ANNONYMOUS FUNCTIONS
+
+        sayMyName();
+        console.log(sayName); // Outputs: function sayName() { ... }
+        
+         var sayName = function() {
+            console.log("r");
+            console.log("a");
+            console.log("s");
+            console.log("h");
+            console.log("m");
+            console.log("i");     
+        }
+        function sayMyName() {
+            console.log("s");
+            console.log("h");
+            console.log("a");
+            console.log("g");
+            console.log("u");
+            console.log("n");     
+        }
+
+
+        // ARROW FUNCTIONS
+        let sum=(a , b) => a + b; // Arrow function to sum two numbers
+        console.log(sum(5, 10)); // Outputs: 15
+        
+        let square = (a) => a * a; // Arrow function to square a number
+        console.log(square(5)); // Outputs: 25
+        
+
     </script>
 </body>
 
